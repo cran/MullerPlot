@@ -2,8 +2,8 @@ Package: MullerPlot
 Type: Package
 Title: Generates Muller Plot from Population/Abundance/Frequency
         Dynamics Data
-Version: 0.1.2
-Date: 2016-10-17
+Version: 0.1.3
+Date: 2022-04-27
 Authors@R: c(
     person("Farnoush", "Farahpour", email = "farnoush.farahpour@uni-due.de", role = c("aut", "cre")),
     person("Mohammadkarim", "Saeedghalati", email = "m.saeedghalati@uni-due.de", role = c("aut")),
@@ -16,14 +16,15 @@ Description: Generates Muller plot from parental/genealogy/phylogeny information
     MullerPlot package has the tools to generate Muller plots which clearly depict the origin of successors of OTUs.
 License: GPL-3
 LazyData: TRUE
-RoxygenNote: 5.0.1
+RoxygenNote: 7.1.2
 Imports: grDevices,RColorBrewer,graphics
 Suggests: knitr, rmarkdown
 VignetteBuilder: knitr
+Encoding: UTF-8
 NeedsCompilation: no
-Packaged: 2016-10-20 09:26:10 UTC; farnoush
+Packaged: 2022-04-27 11:29:24 UTC; farnoush
 Author: Farnoush Farahpour [aut, cre],
   Mohammadkarim Saeedghalati [aut],
   Daniel Hoffmann [aut]
 Repository: CRAN
-Date/Publication: 2016-10-20 23:16:11
+Date/Publication: 2022-04-27 11:40:02 UTC

@@ -4,7 +4,9 @@
 \name{PopulationDataList}
 \alias{PopulationDataList}
 \title{Population/Abundance data of OTUs over time for "list" method}
-\format{A data frame with 3 columns and 382 rows.}
+\format{
+A data frame with 3 columns and 382 rows.
+}
 \usage{
 data(PopulationDataList)
 }
@@ -22,4 +24,3 @@ The second column contains time steps in which the corresponding OTUs are presen
 The third column contains populations/abundances of corresponding OTUs at corresponding times.
 }
 \keyword{datasets}
-

@@ -4,7 +4,9 @@
 \name{PopulationDataTable}
 \alias{PopulationDataTable}
 \title{Population/Abundance data of OTUs over time for "table" method}
-\format{A matrix with 101 columns and 8 rows.}
+\format{
+A matrix with 101 columns and 8 rows.
+}
 \usage{
 data(PopulationDataTable)
 }
@@ -25,4 +27,3 @@ and "colnames" must be time steps or generations.
 The Matrix contains abundance of each OTU at each time step.
 }
 \keyword{datasets}
-

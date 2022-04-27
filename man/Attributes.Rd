@@ -4,7 +4,9 @@
 \name{Attributes}
 \alias{Attributes}
 \title{Attributes of OTUs}
-\format{A matrix with 3 columns and 8 rows.}
+\format{
+A matrix with 3 columns and 8 rows.
+}
 \usage{
 data(Attributes)
 }
@@ -23,4 +25,3 @@ NA ,"RBL636","RBL636","ylnC-48","rkd D5891 bc","iglK f12","rkd D5891 bc","nuhj-2
 and the third column contains colors of corresponding OTUs.
 }
 \keyword{datasets}
-

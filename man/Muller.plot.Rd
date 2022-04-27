@@ -4,8 +4,13 @@
 \alias{Muller.plot}
 \title{Muller.plot}
 \usage{
-Muller.plot(attributes, population.data, data.method,
-  time.interval.method = "linear", ...)
+Muller.plot(
+  attributes,
+  population.data,
+  data.method,
+  time.interval.method = "linear",
+  ...
+)
 }
 \arguments{
 \item{attributes}{A matrix or dataframe with two or three columns which contains information
@@ -65,7 +70,7 @@ time points have equal distance.
  data(Attributes)
  # Muller plot
  Muller.plot(attributes = Attributes, population.data = PopulationDataList,data.method = "list",
-             time.interval.method = "linear")#'
+             time.interval.method = "linear")
 
  # load information of population/abundance/frequency dynamics as table
  data(PopulationDataTable)
@@ -73,4 +78,3 @@ time points have equal distance.
  Muller.plot(attributes = Attributes, population.data = PopulationDataTable,data.method = "table")
 
 }
-

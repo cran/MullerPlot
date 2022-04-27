@@ -1,11 +1,11 @@
 ---
-title: "Introduction to MullerPlot Package"
+title: "Introduction to MullerPlot package"
 author: "F. Farahpour"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 bibliography: bibliography.bib
 vignette: >
-  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteIndexEntry{Introduction to MullerPlot package}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

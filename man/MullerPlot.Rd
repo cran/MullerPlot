@@ -3,7 +3,6 @@
 \docType{package}
 \name{MullerPlot}
 \alias{MullerPlot}
-\alias{MullerPlot-package}
 \title{MullerPlot: A package for generating Muller plot from population/abundance/frequency dynamics and
 parental/geneaolgy/phylogeny relation.}
 \description{
@@ -30,4 +29,3 @@ their abundances over time.
 MullerPlot package has the tools to generate Muller plots which clearly depict the origin of
 successors of OTUs.
 }
-

@@ -53,7 +53,7 @@
 #'  data(Attributes)
 #'  # Muller plot
 #'  Muller.plot(attributes = Attributes, population.data = PopulationDataList,data.method = "list",
-#'              time.interval.method = "linear")#'
+#'              time.interval.method = "linear")
 #'
 #'  # load information of population/abundance/frequency dynamics as table
 #'  data(PopulationDataTable)
@@ -90,7 +90,7 @@ Muller.plot <- function(attributes,population.data,data.method,time.interval.met
     }
   }
   if (base::length(unique(color.list))<length(color.list)) {
-    base::warning("Some OTUs have the same color in attributes.")
+    base::warning("Some OTUs have the same color in attributes. It may cause confusion in the final plot.")
   }
   #################################
 
@@ -98,7 +98,7 @@ Muller.plot <- function(attributes,population.data,data.method,time.interval.met
   #################################
   if (data.method == "list") {
     if (base::ncol(population.data)!=3) {
-      base::stop("population.data must have 3 colomns containing OTU names, time/generation and abundances, respectively.")
+      base::stop("population.data must have 3 columns containing OTU names, time/generation and abundances, respectively.")
     }
     base::colnames(population.data) <- c("names","times","abundances")
     species.name.pop <- base::unique(base::as.character(population.data$names))
@@ -118,7 +118,7 @@ Muller.plot <- function(attributes,population.data,data.method,time.interval.met
       base::stop("There are some repeated entry in the rownames of population.data.")
     }
     if (base::length(base::colnames(population.data))<base::ncol(population.data)) {
-      base::stop("colnames of population.data must be time steps or generations.")
+      base::stop("colnames of population.data must be time steps or generations. Each column should have a name which must be time/generation.")
     } else {
       time.points.input <- base::as.numeric(base::colnames(population.data))
     }
@@ -186,7 +186,7 @@ Muller.plot <- function(attributes,population.data,data.method,time.interval.met
 
   if (!base::all(species.name.par %in% species.name.pop)) {
     not.present <- base::as.character(parent.list$names[base::which(!(species.name.par %in% species.name.pop))])
-    base::warning("These OTUs are not present in the dynamics and are ignored:",immediate. = TRUE)
+    base::warning("These OTUs are not present in the dynamics and will be ignored:",immediate. = TRUE)
     for (sp in not.present) {
       base::message(paste(sp," "),appendLF = FALSE)
     }
